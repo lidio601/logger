@@ -1,5 +1,7 @@
 # Logger
 
+[![DeepSource](https://deepsource.io/gh/lidio601/logger.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/lidio601/logger/?ref=repository-badge)
+
 ### Requirements
 
 1. [Yarn Package Manager](https://yarnpkg.com/)
