@@ -1,10 +1,10 @@
-import _defaultTo from 'lodash/defaultTo';
-import _isNil from 'lodash/isNil';
+import _defaultTo from "lodash/defaultTo";
+import _isNil from "lodash/isNil";
 
-import ConfigHolder from './types/ConfigHolder';
-import ILogger from './types/ILogger';
+import ConfigHolder from "./types/ConfigHolder";
+import ILogger from "./types/ILogger";
 
-const DEBUG = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
+const DEBUG = !process.env.NODE_ENV || process.env.NODE_ENV === "development";
 
 function makeLogger(prefix: string, config?: ConfigHolder<boolean>) {
   return function (message: string, ...args: any) {
@@ -28,7 +28,7 @@ function makeLoggerW(prefix: string) {
 
 function _makeLoggers(
   prefix: string,
-  config: ConfigHolder<boolean>,
+  config: ConfigHolder<boolean>
 ): ILogger & { logger: ILogger } {
   let debug = config.get();
 

@@ -1,1 +1,1 @@
-export { makeLoggers } from './Logger';
+export { makeLoggers } from "./Logger";
